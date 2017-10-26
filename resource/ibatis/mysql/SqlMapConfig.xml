@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMapConfig      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings useStatementNamespaces="true" cacheModelsEnabled="true"
+		enhancementEnabled="true" lazyLoadingEnabled="true" maxRequests="128"
+		maxSessions="16" maxTransactions="8" />
+
+	<sqlMap resource="ibatis/mysql/business/upload/mngPackageUpload.xml" />
+	<sqlMap resource="ibatis/mysql/business/update/rnPackageInfo.xml" />
+	
+</sqlMapConfig>
+

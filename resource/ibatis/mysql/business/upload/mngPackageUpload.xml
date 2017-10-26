@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+    
+<!-- 活动信息配置附表 -->
+<sqlMap namespace="MngPackageUploadEntity">
+	<typeAlias alias="mngPackageUploadEntity" type="cn.leadeon.business.upload.entity.MngPackageUploadEntity"/>
+	
+	<!-- 根据包名+平台+基础包版本查询出基础包 -->
+	<select id="getBasePackage" resultClass="mngPackageUploadEntity" parameterClass="map">
+		SELECT 
+			ID,
+			PLAT_FORM platForm,
+			APP_VER appVer,
+			RN_PACKAGE_NAME rnPackageName,
+			RN_PACKAGE_TYPE rnPackageType,
+			BASE_VER baseVer,
+			RN_PACKAGE_VER rnPackageVer,
+			DOWNLOAD_URL downLoadUrl,
+			ZIP_HASH zipHash,
+			JSBUNDLE_HASH jsBundleHash
+		FROM MNG_RNPACKAGE_INFO
+		WHERE PLAT_FORM=#platForm#
+			<isNotEmpty property="baseVer">
+				AND RN_PACKAGE_VER = #baseVer#
+				AND RN_PACKAGE_TYPE = 0
+			</isNotEmpty>
+			<isNotEmpty property="rnPackageVer">
+				AND RN_PACKAGE_VER = #rnPackageVer#
+				AND RN_PACKAGE_TYPE = 1
+			</isNotEmpty>
+			AND RN_PACKAGE_NAME = #rnPackageName#
+	</select>
+	
+	<insert id="save" parameterClass="mngPackageUploadEntity">
+		<selectKey resultClass="java.lang.Integer" keyProperty="id" type="post">  
+            SELECT @@IDENTITY AS MARK_ID  
+        </selectKey>
+		INSERT INTO MNG_RNPACKAGE_INFO (
+			CREATE_TIME,
+			PLAT_FORM ,
+			APP_VER ,
+			RN_PACKAGE_NAME ,
+			RN_PACKAGE_TYPE ,
+			RN_PACKAGE_VER ,
+			DOWNLOAD_URL ,
+			ZIP_HASH,
+			JSBUNDLE_HASH,
+			BASE_VER,
+			VERSION_CODE
+		)VALUES(
+			NOW(),
+			#platForm#,
+			#appVer#,
+			#rnPackageName#,
+			#rnPackageType#,
+			#rnPackageVer#,
+			#downLoadUrl#,
+			#zipHash#,
+			#jsBundleHash#,
+			#baseVer#,
+			#versionCode#
+		)
+	</insert>
+</sqlMap>

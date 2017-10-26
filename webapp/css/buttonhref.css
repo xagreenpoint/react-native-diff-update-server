@@ -1,0 +1,26 @@
+/**
+*页面中操作按钮的样式和超链接的样式
+*add by wll
+*2015-09-21 
+*version：2.3
+*a:link，定义正常链接的样式；
+*a:visited，定义已访问过链接的样式；
+*a:hover，定义鼠标悬浮在链接上时的样式；
+*a:active，定义鼠标点击链接时的样式。
+**/
+.acss:link {
+	color:#2B6DFF; 
+	text-decoration:none; 
+} 
+.acss:visited { 
+	color:#cc0066; 
+	text-decoration:none; 
+} 
+.acss:hover { 
+	color:#0000FF; 
+	text-decoration:none; 
+} 
+.acss:active { 
+	color:#00d936; 
+	text-decoration:none; 
+} 

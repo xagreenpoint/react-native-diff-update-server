@@ -1,0 +1,265 @@
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat center center;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat center center;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat center center;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat center center;
+}
+
+.icon-show{
+	background:url('icons/show.png') no-repeat center center;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat center center;
+}
+.icon-dir{
+	background:url('icons/dir.png') no-repeat center center;
+}
+.icon-farther-dir{
+	background:url('icons/farther_dir.png') no-repeat center center;
+}
+.icon-pass{
+	background:url('icons/pass.png') no-repeat center center;
+}
+.icon-nopass{
+	background:url('icons/nopass.png') no-repeat center center;
+}
+.icon-synchronize{
+	background:url('icons/synchronize.png') no-repeat center center;
+}
+.icon-restore{
+	background:url('icons/restore.png') no-repeat center center;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat center center;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat center center;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat center center;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat center center;
+}
+.icon-sort{
+	background:url('icons/sort.png') no-repeat center center;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat center center;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat center center;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat center center;
+}
+.icon-help{
+	background:url('../../../images/sys-icons/help.png') no-repeat;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat center center;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat center center;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat center center;
+}
+
+.icon-close{
+	background:url('icons/close.png') no-repeat center center;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat center center;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat center center;
+}
+
+.icon-batch-del{
+    background:url('icons/batch_del.png') no-repeat center center;
+}
+
+.icon-batch-move{
+    background:url('icons/batch_move.png') no-repeat center center;
+}
+
+.icon-batch-add{
+    background:url('icons/batch_add.png') no-repeat center center;
+}
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat center center;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat center center;
+}
+.icon-pic_model{
+	background:url('icons/pic_model.png') no-repeat center center;
+}
+.icon-release{
+	background:url('../../../images/sys-icons/arrow_up.png') no-repeat;
+}
+.icon-table{
+	background:url('../../../images/sys-icons/table.png') no-repeat;
+}
+.icon-next{
+	background:url('../../../images/sys-icons/next.png') no-repeat;
+}
+.icon-urgency{
+	background:url('../../../images/sys-icons/urgency.png') no-repeat;
+}
+.icon-update{
+	background:url('../../../images/sys-icons/update.png') no-repeat;
+}
+.icon-pie-chart{
+	background:url('../../../images/sys-icons/pieChart.png') no-repeat;
+}
+.icon-rescind{
+	background:url('../../../images/sys-icons/arrow_down.png') no-repeat;
+}
+.icon-sys-navigation{
+	background:url('../../../images/sys-icons/navigation.png') no-repeat center center;
+}
+.icon-impxls{
+	background:url('../../../images/sys-icons/xls.png') no-repeat;
+}
+
+.icon-overbook{
+	background:url('../../../images/sys-icons/overbooking.png') no-repeat;
+}
+.icon-chart-curve{
+	background:url('../../../images/sys-icons/chart_curve.png') no-repeat;
+}
+.icon-chart-bar{
+	background:url('../../../images/sys-icons/chart_bar.png') no-repeat;
+}
+.icon-bricks{
+	background:url('../../../images/sys-icons/bricks.png') no-repeat;
+}
+.icon-imp{
+	background:url('../../../images/sys-icons/import.gif') no-repeat;
+}
+.icon-exp{
+	background:url('../../../images/sys-icons/export.gif') no-repeat;
+}
+.icon-view{
+	background:url('../../../images/sys-icons/view.png') no-repeat center center;
+}
+.icon-handle{
+	background:url('../../../images/sys-icons/handle.png') no-repeat;
+}
+.icon-mid_opion{
+	background:url('../../../images/sys-icons/mid_opion.png') no-repeat;
+}
+.icon-table_save{
+	background:url('../../../images/sys-icons/table_save.png') no-repeat;
+}
+.icon-unlock{
+	background:url('../../../images/sys-icons/unlock.png') no-repeat;
+}
+.icon-exit{
+	background:url('../../../images/sys-icons/exit.png') no-repeat;
+}
+.icon-password{
+	background:url('../../../images/sys-icons/password.png') no-repeat;
+}
+.icon-file_down{
+	background:url('../../../images/sys-icons/application_put.png') no-repeat;
+}
+
+.icon-cog{
+	background:url('../../../images/sys-icons/cog.png') no-repeat;
+}
+
+.icon-map{
+	background:url('../../../images/sys-icons/map.png') no-repeat;
+}
+
+.icon-folder{
+	background:url('../../../images/sys-icons/folder.png') no-repeat center center;
+}
+
+/* 閽�儵鏀㈠ú璇插З缁狅紕鎮�1001 */
+.icon-1001{
+	background:url('../../../images/icon/1001.png') no-repeat center center;
+}
+/* 娑擃亝锟介崠鏍︾瑹閸旓拷1012 */
+.icon-1012{
+	background:url('../../../images/icon/487.png') no-repeat center center;
+}
+/* 閻楀牊婀扮粻锛勬倞-3 */
+.icon-3{
+	background:url('../../../images/icon/3.png') no-repeat center center;
+}
+/* 鐎广垺婀囬張宥呭-1036 */
+.icon-1036{
+	background:url('../../../images/icon/333.png') no-repeat center center;
+}
+/* 闁板秶鐤嗙粻锛勬倞-1028 */
+.icon-1028{
+	background:url('../../../images/icon/4.png') no-repeat center center;
+}
+/* 缂佺喕顓搁幎銉ㄣ�-1043 */
+.icon-1043{
+	background:url('../../../images/icon/334.png') no-repeat center center;
+}
+/* 缁崵绮虹粻锛勬倞-470 */
+.icon-470{
+	background:url('../../../images/icon/470.png') no-repeat center center;
+}
+/* 閺佺増宓佺粻锛勬倞-1120 */
+.icon-1120{
+	background:url('../../../images/icon/8.png') no-repeat center center;
+}
+/* 濞茶濮╅柊宥囩枂-495 */
+.icon-495{
+	background:url('../../../images/icon/495.png') no-repeat center center;
+}
+/* 閸氼垰濮╂い鐢稿帳缂冿拷223 */
+.icon-223{
+	background:url('../../../images/icon/223.png') no-repeat center center;
+}
+/* 娑撱倗楠囨潻鎰儉-340 */
+.icon-340{
+	background:url('../../../images/icon/340.png') no-repeat center center;
+}
+/* 濞戝牊浼呴幒銊╋拷-1099 */
+.icon-1099{
+	background:url('../../../images/icon/541.png') no-repeat center center;
+}
+/* 鐎广垺鍩涚粩顖滎吀閻烇拷1063 */
+.icon-1063{
+	background:url('../../../images/icon/340.png') no-repeat center center;
+}
+/* 娣団剝浼呴崣鎴濈缁狅紕鎮�1244 */
+.icon-1244{
+	background:url('../../../images/icon/1244.png') no-repeat center center;
+}
+/* 閸熷棗鎼ф穱鈩冧紖-1275 */
+.icon-1275{
+	background:url('../../../images/icon/1275.png') no-repeat center center;
+}
+/* 閸熷棗鐓勯崯鍡楁惂缁狅紕鎮�1291 */
+.icon-1291{
+	background:url('../../../images/icon/1291.png') no-repeat center center;
+}
+
+
+
+
+.sharefile-folder{
+	background: url('default/images/tree_icons.png') no-repeat -224px 0;
+}
+.sharefile-file{
+	background: url('default/images/tree_icons.png') no-repeat -240px 0;
+}
+

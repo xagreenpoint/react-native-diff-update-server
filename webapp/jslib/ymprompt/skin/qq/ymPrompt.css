@@ -1,0 +1,37 @@
+/*container*/
+#ym-window{
+	background:#fff;overflow:hidden;
+	font-size:12px;font-family:'ËÎÌו';
+	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#ff666666, Strength=5, Direction=135);
+}
+
+/*header*/
+.ym-tl{padding-left:3px;background:#CFD7EC url(images/title_bg_left.gif) no-repeat 0 0}
+.ym-tr{padding-right:3px;background:#CFD7EC url(images/title_bg_right.gif) no-repeat right 0;}
+.ym-tc{background:#CFD7EC url(images/title_bg_center.gif) repeat-x 0 0;overflow:hidden;height:25px;line-height:25px;}
+.ym-ttc{height:3px}
+.ym-header-text{font-size:12px;font-weight:bold;color:#fff;margin-left:5px;float:left}
+.ym-header-tools{float:right;margin-top:5px}
+
+/*body*/
+.ym-ml{background:url(images/win_l.gif) repeat-y 0 0;padding-left:3px;}
+.ym-mr{background:url(images/win_r.gif) repeat-y right 0;padding-right:3px;}
+.ym-mc{background:url(images/content_bg.gif) repeat-x 0 0;padding:0}
+.ym-body{overflow:hidden;padding:0;font-size:12px;}
+
+/*button*/
+.ym-btn{text-align:center}
+
+/*footer*/
+.ym-bl{background:url(images/win_lb.gif) no-repeat 0 bottom;padding-left:3px}
+.ym-br{background:url(images/win_rb.gif) no-repeat right bottom;padding-right:3px}
+.ym-bc{background:url(images/win_b.gif) repeat-x 0 bottom;height:3px;font-size:3px}
+
+.ymPrompt_alert .ym-content,.ymPrompt_succeed .ym-content,.ymPrompt_error .ym-content,.ymPrompt_confirm .ym-content{padding:50px 0 0}
+
+.ymPrompt_close{
+	cursor:pointer;
+	background:url(images/close.gif) no-repeat 0 0;
+	width:16px;height:16px;
+}
+

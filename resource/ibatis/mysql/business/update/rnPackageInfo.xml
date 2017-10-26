@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+    
+<!-- 活动信息配置附表 -->
+<sqlMap namespace="RnPackageInfo">
+	<typeAlias alias="rnPackageInfo" type="cn.leadeon.business.update.entity.RnPackageInfo"/>
+	
+	<!-- 根据包名+平台+基础包版本查询出基础包 -->
+	<select id="getPatchs" resultClass="rnPackageInfo" parameterClass="map">
+		SELECT
+			RN_PACKAGE_NAME moduleName,
+			RN_PACKAGE_VER version,
+			DOWNLOAD_URL zipPath,
+			ZIP_HASH zipHash,
+			JSBUNDLE_HASH jsbundleHash
+		FROM
+			MNG_RNPACKAGE_INFO
+		WHERE
+			PLAT_FORM = #platForm#
+		AND BASE_VER = #baseVer#
+		AND RN_PACKAGE_NAME = #rnPackageName#
+		AND VERSION_CODE =(
+			SELECT
+				MAX(VERSION_CODE)
+			FROM
+				MNG_RNPACKAGE_INFO
+			WHERE
+				RN_PACKAGE_NAME = #rnPackageName#
+			AND BASE_VER = #baseVer#
+			AND PLAT_FORM = #platForm#
+		)
+		AND RN_PACKAGE_VER != #nowVer# 
+	</select>
+	
+</sqlMap>

@@ -1,0 +1,134 @@
+/*
+jQuery.ganttView v.0.7
+Copyright (c) 2010 JC Grubbs - jc.grubbs@devmynd.com
+MIT License Applies
+*/
+
+div.ganttview-hzheader-month,
+div.ganttview-hzheader-day,
+div.ganttview-vtheader,
+div.ganttview-vtheader-item-name,
+div.ganttview-vtheader-series,
+div.ganttview-grid,
+div.ganttview-grid-row-cell {
+	float: left;
+}
+
+div.ganttview-hzheader-month,
+div.ganttview-hzheader-day {
+	text-align: center;
+}
+
+div.ganttview-grid-row-cell.last,
+div.ganttview-hzheader-day.last,
+div.ganttview-hzheader-month.last {
+	border-right: none;
+}
+
+div.ganttview {
+	border: 1px solid #5ea6df;
+}
+
+
+/* Horizontal Header */
+
+div.ganttview-hzheader-month {
+	width: 40px;
+	height: 27px;
+	border-right: 1px solid #5ea6df;
+	line-height: 40px;
+}
+
+div.ganttview-hzheader-day {
+	width: 27px;
+	height:27px;
+	border-right: 1px solid #5ea6df;
+	border-top: 1px solid #5ea6df;
+	line-height: 27px;
+	color: #777;
+}
+
+
+/* Vertical Header */
+
+div.ganttview-vtheader {
+	margin-top: 55px;
+	width: 400px;
+	overflow: hidden;	 
+	border-bottom: 1px solid #5ea6df;
+	 
+}
+
+div.ganttview-vtheader-item {
+	overflow: hidden; 
+}
+
+div.ganttview-vtheader-item-name {
+	width: 100px;
+	padding-left: 5px;
+	border-top: 1px solid #5ea6df;
+	line-height: 38px;
+}
+
+div.ganttview-vtheader-series-name {
+	width: 294px;
+	height: 28px;
+	border-top: 1px solid #5ea6df;
+	border-left: 1px solid #5ea6df;
+	line-height: 28px;
+	padding-left: 0px;
+}
+
+
+/* Slider */
+
+div.ganttview-slide-container {
+	overflow: auto;
+	border-left: 1px solid #5ea6df;
+}
+
+
+/* Grid */
+
+div.ganttview-grid-row-cell {
+	width: 27px;
+	height: 28px;
+	border-right: 1px solid #5ea6df;
+	border-top: 1px solid #5ea6df;
+}
+
+div.ganttview-grid-row-cell.ganttview-weekend {
+	background-color: #ffffff;
+}
+
+
+/* Blocks */
+
+div.ganttview-blocks {
+
+	margin-top: 54px;
+}
+
+div.ganttview-block-container {
+	height: 25px;
+	padding-top: 4px;
+}
+
+div.ganttview-block {
+	position: relative;
+	height: 25px;
+	line-height:25px;
+	 
+	border: 0px solid red;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+div.ganttview-block-text {
+	position: absolute;
+	height: 12px;
+	font-size: 0.8em;
+	color: #000;
+	padding: 2px 3px;
+}

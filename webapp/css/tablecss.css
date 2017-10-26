@@ -1,0 +1,154 @@
+/*根据所含td数量和td是否均分，可直接给tr添加类名tr_half_5，tr_noHalf_5，tr_half_4，tr_noHalf_4，
+ tr_half_3，tr_noHalf_3，tr_half_2，tr_noHalf_2；根据table表格内的td数和是否均分，直接给table添加类名
+ table_noHalf_4，table_half_4，table_noHalf_2，table_half_2
+ **/
+
+/*all td padding style*/
+.tr_half_5 td,.tr_noHalf_5 td,.tr_half_4 td,.tr_noHalf_4 td,.tr_half_3 td,.tr_noHalf_3 td,.tr_half_2 td,
+.tr_noHalf_2 td,.table_noHalf_4 td,.table_half_4 td,.table_noHalf_2 td,.table_half_2 td{
+	padding: 5px;
+}
+/*有五个td标签，均分前四个td标签*/
+/*设置td宽度--*/
+.tr_half_5 td{
+	width: 21.5%;
+}
+/*奇数标签向右对齐*/
+.tr_half_5 td:nth-child(2n+1){
+	text-align: right;
+}
+/*设置最后一个td标签的长度和对齐方式*/
+.tr_half_5 td:last-child{
+	width: 14%;
+	text-align: left;
+}
+
+/*有五个td标签，不均分前四个*/
+/*设置偶数td标签的长度和对齐方式*/
+.tr_noHalf_5 td:nth-child(2n+2){
+	text-align: left;
+	width: 29%;
+}
+/*设置奇数td标签的长度和对齐方式*/
+.tr_noHalf_5 td:nth-child(2n+1){
+	text-align: right;
+	width: 14%;
+}
+/*设置最后一个td标签的长度和对齐方式*/
+.tr_noHalf_5 td:last-child{
+	width: 14%;
+	text-align: left;
+}
+
+/*有四个td标签，均分td标签*/
+/*设置td宽度--*/
+.tr_half_4 td{
+	width: 25%;
+}
+/*设置奇数td标签的长度和对齐方式*/
+.tr_half_4 td:nth-child(2n+1){
+	text-align: right;
+}
+/*有四个td标签，不均分td*/
+/*设置偶数td标签的长度和对齐方式*/
+.tr_noHalf_4 td:nth-child(2n+2){
+	text-align: left;
+	width: 30%;
+}
+/*设置奇数td标签的长度和对齐方式*/
+.tr_noHalf_4 td:nth-child(2n+1){
+	text-align: right;
+	width: 20%;
+}
+
+/*有三个td标签，均分前两个td标签*/
+/*设置td宽度--*/
+.tr_half_3 td{
+	width: 43%;
+}
+/*设置第一个td标签的对齐方式*/
+.tr_half_3 td:nth-child(1){
+	text-align: right;
+}
+/*设置最后一个td标签的长度和对齐方式*/
+.tr_half_3 td:last-child{
+	width: 14%;
+	text-align: left;
+}
+/*有三个td标签，不均分td*/
+/*设置第二个td标签的长度和对齐方式*/
+.tr_noHalf_3 td:nth-child(2){
+	text-align: left;
+	width: 50%;
+}
+/*设置第一个td标签的长度和对齐方式*/
+.tr_noHalf_3 td:nth-child(1){
+	text-align: right;
+	width: 36%;
+}
+/*设置最后一个td标签的长度和对齐方式*/
+.tr_noHalf_3 td:last-child{
+	width: 14%;
+	text-align: left;
+}
+
+/*有两个td标签，均分td标签*/
+/*设置td宽度--*/
+.tr_half_2 td{
+	width: 50%;
+}
+/*设置第一个td标签的对齐方式*/
+.tr_half_2 td:first-child{
+	text-align: right;
+}
+/*设置第二个td标签的对齐方式*/
+.tr_half_2 td:last-child{
+	text-align: left;
+}
+/*有两个td标签，不均分td*/
+/*设置第一个td标签的长度和对齐方式*/
+.tr_noHalf_2 td:first-child{
+	text-align: right;
+	width: 35%;
+}
+/*设置第二个td标签的长度和对齐方式*/
+.tr_noHalf_2 td:last-child{
+	text-align: left;
+	width: 65%;
+}
+/*table中有四个td标签，并且均分td*/
+/*设置td长度*/
+.table_half_4 td{
+	width: 25%;
+}
+.table_half_4 td:nth-child(2n+1){
+	text-align: right;
+}
+/*table中有四个td标签，不均分td*/
+/*设置奇数td长度*/
+.table_noHalf_4 td:nth-child(2n+1){
+	width: 20%;
+	text-align: right;
+}
+/*设置偶数td长度*/
+.table_noHalf_4 td:nth-child(2n+2){
+	width: 30%;
+}
+/*table中有两个td标签，并且均分td*/
+/*设置td长度*/
+.table_half_2 td{
+	width: 50%;
+}
+.table_half_2 td:first-child{
+	text-align: right;
+}
+/*table中有两个td标签，不均分td*/
+/*设置第一个td长度*/
+.table_noHalf_2 td:first-child{
+	width: 30%;
+	text-align: right;
+}
+/*设置第二个td长度*/
+.table_noHalf_2 td:last-child{
+	width: 70%;
+}

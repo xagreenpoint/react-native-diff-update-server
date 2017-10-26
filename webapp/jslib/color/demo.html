@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<link rel="stylesheet" href="css/jquery.bigcolorpicker.css" type="text/css" />
+   <title>Jquery实现颜色选择器插件</title>
+<meta name="author" content="Jquery-School" />
+<meta name="Copyright" content="Jquery-School,www.jq-school.com" />
+<meta name="keywords" content="Jquery,Jquery资源,前端设计,div+css" />
+<meta name="description" content="" />
+	<script type="text/javascript" src="http://www.jq-school.com/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bigcolorpicker.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//1、用法
+			$("#f1").bigColorpicker("f1","L",10);
+			
+			//2、用法
+			$("#bn").bigColorpicker("f3");
+
+			//3、用法
+			$("#img").bigColorpicker(function(el,color){
+				$(el).css("backgroundColor",color);
+			});
+
+			//4、用法
+			$(":text[name='t']").bigColorpicker(function(el,color){
+				$(el).val(color);
+			});
+			
+			//5、用法
+			$(":input[f='bnn']").bigColorpicker(function(el,color){
+				$("#" + $(el).attr("data-target"))
+				             .val(color);
+			});
+			
+			$("#f333").bigColorpicker("f3","L",6);
+		});
+	</script>
+	
+</head>
+<body>
+<center>
+  <span style="font-size:15px; font-weight:bold; text-align:center; line-height:25px;color:#000; width:100%">Jquery实现颜色选择器插件<br />
+     <a href="http://www.jq-school.com" target="_blank" style="color:#000">JquerySchool</a>网站出品（<a href="http://www.jq-school.com" style="color:#000" target="_blank">http://www.jq-school.com</a>）<br />
+	 
+	   （<a href="http://bbs.jq-school.com" target="_blank" style="color:#000">Jquery学堂交流社区</a>）	
+	  <br />
+      官方网站学习交流QQ群<a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=f221dd676cd5f7f51f6b580ff8fe1bdd2fefe911ae0e1137a6f79c58d6e11ebf"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" style="width:90px; height:22px;" alt="Jquery学堂QQ⑧群" width="90" height="22" title="Jquery学堂QQ⑧群"></a></span>
+</center>
+
+	<div style="margin: 10px auto;border: solid 1px #F0F0F0;padding: 10px;" >
+		<input type="text" id="f1"/>
+		<br />
+		<br />		
+		<input type="text" id="f333"/>
+	</div>
+
+	<div style="margin: 10px auto;border: solid 1px #F0F0F0;padding: 10px;" >
+		<input type="text" id="f3"/><input id="bn" type="button" value="选色" />
+	</div>
+	<div style="margin: 0 auto;border: solid 1px #F0F0F0;padding: 10px;" >
+		<div id= "qq">
+			<a href="javascript:void(0)" id="img" ></a>
+		</div>
+	</div>
+	
+	<div style="margin: 10px auto;border: solid 1px #F0F0F0;padding: 10px;" >
+		<input type="text" name="t" />
+			<br />
+			<br />
+		<input type="text" name="t" />
+			<br />
+			<br />
+		<input type="text" name="t" />
+			<br />
+			<br />
+		<input type="text" name="t" />
+	</div>
+	
+	<div style="margin: 10px auto;border: solid 1px #F0F0F0;padding: 10px;" >
+		<input type="text" id="bn1"/> <input f="bnn" data-target="bn1" type="button" value="选色" />
+			<br />
+			<br />
+		<input type="text" id="bn2"/> <input f="bnn" data-target="bn2" type="button" value="选色" />
+			<br />
+			<br />
+		<input type="text" id="bn3"/> <input f="bnn" data-target="bn3" type="button" value="选色" />
+			<br />
+			<br />
+		<input type="text" id="bn4"/> <input f="bnn" data-target="bn4" type="button" value="选色" />
+	</div>	
+</body>
+</html>
