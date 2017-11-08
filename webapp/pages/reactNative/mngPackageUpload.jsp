@@ -211,7 +211,9 @@ function saveBtn() {
 				console.log(data);
 				if(data.resultCode=="200"){
 					location.reload();
-					$.messager.alert("提示",data.resultMsg,'info');
+					$.messager.alert("提示",data.resultMsg,'info',function(){
+						location.reload();
+					});
 		    	}else{
 		    		$.messager.alert("提示",data.resultMsg,'info');
 		    		$('#wait_dialog').dialog('close');
